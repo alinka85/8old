@@ -1,0 +1,84 @@
+.profits {
+  background-color: var(--title-color);
+
+  &__list {
+   width: inherit;
+    @include for-tablet-up {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+  &__item { 
+
+    @include for-tablet-up {
+      width: 354px; 
+      margin-right: 30px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+    @include for-desk-up {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    }
+   
+  
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      @include for-tablet-up {
+      width:354px;
+      
+      }
+      @include for-desk-up {
+        width: 270px;
+      }
+      height: 120px;
+      background-color: var(--projects-color);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 30px;
+    }
+    
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    @include for-tablet-up {
+     text-align: left;
+    }
+  }
+}
+.text {
+  margin-bottom: 30px;
+  @include for-desk-up {
+  margin-bottom: 0;
+  }
+}
+.icon {
+  &__antenna::before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+  &__clock::before {
+    background-image: url(../images/icons/clock.svg);
+  }
+
+  &__diagram::before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+  &__astronaut::before {
+    background-image: url(../images/icons/astronaut.svg);
+  }
+}

@@ -1,0 +1,133 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  margin: 0;
+  
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--title-color);
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    
+    @include for-desk-up {
+      text-align: left;
+    }
+  }
+
+  .logo {
+    margin-right: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    justify-content: center;
+    &__studio {
+      color: var(--title-color);
+    }
+    @include for-desk-up {
+      justify-content: left;
+    }
+  }
+
+  .info {
+  
+    @include for-desk-up {
+     display: flex;
+    }
+    &__adress {
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: var(--title-color);
+      text-decoration: none;
+    }
+    &__contact {
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.03em;
+      font-weight: 400;
+      margin: 0;
+      font-style: normal;
+      text-decoration: none;
+    }
+    &__list {
+   
+      text-align: left;
+      margin-bottom: 9px;
+      text-align: center;
+     
+      @include for-desk-up {
+      text-align: left;
+     
+  }
+}
+    &__item {
+      margin-right: 0;
+      margin-bottom: 60px;
+             
+        @include for-desk-up {
+          margin-left: auto;
+         
+          &:first-child {
+          margin-right: 70px;
+          margin-bottom: 0;
+         }
+     
+    }
+  }
+}
+
+  .social {
+    justify-content: center;
+    @include for-desk-up {
+     justify-content: left;
+      }
+    &__item {
+      margin-right: 10px;
+      width: 44px;
+      height: 44px;
+    
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      fill: var(--title-color);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+button {
+  margin: 0;
+}
+
+.contact__input.send {
+  background-color: var(--back-color);
+  font-size: 16px;
+  max-width: 450px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 15px;
+  margin-bottom: 20px;
+  @include for-desk-up {
+  margin-right: 12px;
+  margin-bottom:0;
+  width: 358px;
+  }
+   
+ }
+
+
+.footer-tablet{
+  @include for-tablet-up{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+}

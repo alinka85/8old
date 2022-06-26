@@ -1,0 +1,47 @@
+.main {
+  @include for-tablet-up{
+    background-image: linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url(../images/hero/hero_md.jpg);
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+    background-image:  linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero_md@2x.jpg);
+  }
+  }
+  @include for-desk-up{
+    padding: 200px 0 200px 0;
+    background-image: linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url(../images/hero/hero_lg.jpg);
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+      background-image:  linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero_lgd@2x.jpg);
+    }
+  }
+  text-align: center;
+  margin: 0 auto;
+  padding: 118px 0 118px 0;
+  background-image:   linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+  url(../images/hero/hero_sm.jpg);
+  @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+    background-image:  linear-gradient(to right rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero_sm@2x.jpg);
+  }
+
+  background-color: var(--back-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  letter-spacing: 0.06em;
+}
+.heading {
+  color: var(--title-color);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.61;
+  @include for-desk-up{
+  font-size: 44px;
+  line-height: 1.36;
+  }
+}

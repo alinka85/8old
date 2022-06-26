@@ -1,0 +1,21 @@
+@import "../utils/fonts";
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  font-family: var(--font-family-roboto), sans-serif;
+}
+.caption {
+  font-weight: 700;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  @include for-desk-up{
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  }
+}
